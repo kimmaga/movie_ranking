@@ -44,9 +44,9 @@ _callApi=()=>{
 }
 
   render() {
-    console.log('did render');
+    const {movies} = this.state;
     return (
-      <div className="App">
+      <div className={movies?"App":"APP--loading"}>
         {this.state.movies ? this._renderMovies():'Loading'}
       </div>
     );
