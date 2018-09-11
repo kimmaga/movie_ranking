@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Movie from './Movie';
 
 
 
 class App extends Component {
+  // Render: componentWillMount() -> render() -> componentDidMount()
+  // Update componentWillReceiveProps() -> shouldComponentUpdate() -> componentWillUpdate() -> render() -> componentDidUpdate()
+
 //Render : componentWillMount() -> render()
 //Update componentWillReceiveProps() ->shouldComponentUpdate() == true -> componentWillUpdate()->render()=>componentDidWillUpdate()
 //stateㄱ가 바뀔때마다 render()를 다시한다.
